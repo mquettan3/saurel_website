@@ -30,7 +30,7 @@ fields:
     required: true
     date_format: MM/DD/YYYY
     time_format: hh:mm
-    display_utc: false
+    display_utc: true
     export_format: MM/DD/YYYY hh:mm
   default: now
 pages:
