@@ -1,4 +1,18 @@
 ---
 label: Blog Post 2
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: blog_image
+  type: file
+  config:
+    maxSize: 250
+  label: Blog image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
