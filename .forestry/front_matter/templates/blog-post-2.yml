@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
 - name: blog_image
   type: file
   config:
@@ -16,3 +21,12 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: creation_date
+  type: datetime
+  label: Creation Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
