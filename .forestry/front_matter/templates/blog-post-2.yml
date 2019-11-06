@@ -33,3 +33,5 @@ fields:
     display_utc: false
     export_format: MM/DD/YYYY hh:mm
   default: now
+pages:
+- src/pages/blogposts/my-first-blog-post.md
