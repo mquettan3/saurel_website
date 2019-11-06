@@ -26,7 +26,9 @@ fields:
   label: Creation Date
   description: ''
   config:
-    required: false
-    date_format: 
-    time_format: 
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: hh:mm
     display_utc: false
+    export_format: MM/DD/YYYY hh:mm
+  default: now
