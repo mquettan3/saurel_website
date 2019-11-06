@@ -8,3 +8,6 @@ author: Marcus Quettan
 blog_image: "/uploads/Atlanta_Cityscape.jpg"
 
 ---
+# This is a blog post!
+
+Hopefully you've learned something by the time you've finished reading this post!
