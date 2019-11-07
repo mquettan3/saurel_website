@@ -45,5 +45,5 @@ fields:
     required: true
   label: Post Order ID
 pages:
-- src/pages/blogposts/post-one.md
 - src/pages/blogposts/my-first-blog-post.md
+- src/pages/blogposts/post-one.md
