@@ -2,7 +2,7 @@
 tags:
 - Just a test
 - This is a test!
-creation_date: 2019-11-06T09:00:00-0800
+creation_date: 11/07/2019 07:00 AM
 title: My first blog post!
 author: Marcus Quettan
 blog_image: "/uploads/Atlanta_Cityscape.jpg"
