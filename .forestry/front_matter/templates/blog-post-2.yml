@@ -29,9 +29,9 @@ fields:
   config:
     required: true
     date_format: MM/DD/YYYY
-    time_format: hh:mm A
+    time_format: ''
     display_utc: false
-    export_format: YYYY-MM-DD hh:mm A
+    export_format: YYYY-MM-DD hh:mm:ss Z
   default: now
 pages:
 - src/pages/blogposts/my-first-blog-post.md
