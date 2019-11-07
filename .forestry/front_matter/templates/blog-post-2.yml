@@ -34,5 +34,5 @@ fields:
     export_format: MM/DD/YYYY h:mm
   default: now
 pages:
-- src/pages/blogposts/post-one.md
 - src/pages/blogposts/my-first-blog-post.md
+- src/pages/blogposts/post-one.md
