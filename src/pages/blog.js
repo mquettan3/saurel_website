@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
+import { graphql } from 'gatsby'
 
 export default function BlogPage( { data } ) {
     return (
@@ -44,5 +45,5 @@ query BlogIndexQuery {
         }
       }
     }
-  }
+  }  
 `
