@@ -33,17 +33,6 @@ fields:
     display_utc: false
     export_format: MM/DD/YYYY h:mm
   default: now
-- name: post_order_id
-  type: number
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-    required: true
-  label: Post Order ID
 pages:
 - src/pages/blogposts/my-first-blog-post.md
 - src/pages/blogposts/post-one.md
