@@ -29,7 +29,7 @@ fields:
   config:
     required: true
     date_format: MM/DD/YYYY
-    time_format: hh:mm A
+    time_format: h:mm A
     display_utc: false
     export_format: MM/DD/YYYY h:mm
   default: now
