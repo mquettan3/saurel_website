@@ -31,7 +31,7 @@ fields:
     date_format: MM/DD/YYYY
     time_format: hh:mm A
     display_utc: false
-    export_format: ''
+    export_format: MM/DD/YYYY h:mm
   default: now
 - name: post_order_id
   type: number
