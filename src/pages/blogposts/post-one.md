@@ -9,7 +9,7 @@ blog_image: "/uploads/Atlanta_Cityscape.jpg"
 post_order_id: 1
 
 ---
-### Test Blog Post (edited)
+### Test Blog Post
 
 Check this out.
 
