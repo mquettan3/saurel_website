@@ -10,18 +10,22 @@ export default function BlogPage( { data } ) {
                 <p>Dolor elit deserunt laborum nulla. Consectetur culpa irure occaecat consequat ea culpa eiusmod ipsum ipsum. Sint et laboris do nisi elit tempor cillum nulla nostrud nostrud adipisicing irure ullamco.</p>
                 
                 <p>___________________</p>
-                {data.allMarkdownRemark.edges.map(post => (
-                    <div key={post.node.id}>
-                        <h1>{post.node.frontmatter.title}</h1>
-                        <small>Posted by: {post.node.frontmatter.author} on {post.node.frontmatter.creation_date}</small>
-                        <br />
-                        <br />
-                        <div dangerouslySetInnerHTML={{ __html: post.node.html }}></div> 
-                        <br />
-                        <p>___________________</p>
-                        <br />
-                    </div>
-                ))}
+                {data.allMarkdownRemark.edges.map(post => {
+                    const localDate = new Date(post.node.frontmatter.creation_date);
+                    
+                    return (
+                        <div key={post.node.id}>
+                            <h1>{post.node.frontmatter.title}</h1>
+                            <small>Posted by: {post.node.frontmatter.author} on {localDate.toLocaleString("en-US")}</small>
+                            <br />
+                            <br />
+                            <div dangerouslySetInnerHTML={{ __html: post.node.html }}></div> 
+                            <br />
+                            <p>___________________</p>
+                            <br />
+                        </div>
+                    )
+                })}
             </div>
         </Layout>
     )
@@ -29,7 +33,7 @@ export default function BlogPage( { data } ) {
 
 export const pageQuery = graphql`
 query BlogIndexQuery {
-    allMarkdownRemark(sort: {fields: frontmatter___post_order_id, order: DESC}) {
+    allMarkdownRemark(sort: {fields: frontmatter___creation_date, order: DESC}) {
       edges {
         node {
           id
@@ -40,7 +44,6 @@ query BlogIndexQuery {
             creation_date
             blog_image
             tags
-            post_order_id
           }
         }
       }

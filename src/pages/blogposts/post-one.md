@@ -6,7 +6,6 @@ creation_date: 11/07/2019 10:00
 title: My second blog post!
 author: Saurel Quettan
 blog_image: "/uploads/Atlanta_Cityscape.jpg"
-post_order_id: '1'
 
 ---
 ### Test Blog Post
