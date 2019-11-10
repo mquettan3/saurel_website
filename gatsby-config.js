@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Saurel Business`,
+    description: `Saurel Business is a business consulting group born out of Atlanta, GA which offers business leaders the guidance to break through tough times and breach into that next level of business!`,
+    author: `@mqdarkblue`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
