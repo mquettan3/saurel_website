@@ -1,0 +1,38 @@
+---
+label: Blog Post
+hide_body: false
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: blog_image
+  type: file
+  config:
+    maxSize: 250
+  label: Blog image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: creation_date
+  type: datetime
+  label: Creation Date
+  description: ''
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: h:mm A
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm
+  default: now
+pages:
+- src/pages/blogposts/my-first-blog-post.md
+- src/pages/blogposts/post-one.md

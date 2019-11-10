@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99d9cb13-27dc-4ac4-aeab-deb156aaad4d/deploy-status)](https://app.netlify.com/sites/saurel-website-5d01b1/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

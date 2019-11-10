@@ -1,16 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Saurel Business`,
+    title: `Saurel Quettan Enterprises`,
     description: `Saurel Business is a business consulting group born out of Atlanta, GA which offers business leaders the guidance to break through tough times and breach into that next level of business!`,
-    author: `@mqdarkblue`,
+    author: `@mqdarkblue`
   },
   plugins: [
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,

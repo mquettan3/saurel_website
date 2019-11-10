@@ -1,0 +1,11 @@
+// Global Variable Definitions
+@import "variables";
+
+// Header Styles
+@import "components/header";
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 90%;
+}
