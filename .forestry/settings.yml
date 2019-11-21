@@ -6,6 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: src/pages/blogposts
+  label: Events
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/pages/blogposts
   label: Posts
   create: all
   match: "**/*"
