@@ -47,7 +47,7 @@ fields:
       path: 
   label: Post Type
   description: Used to differentiate blog posts from other markdown files.
-  hidden: true
+  hidden: false
 pages:
 - src/pages/blogposts/my-first-blog-post.md
 - src/pages/blogposts/post-one.md
