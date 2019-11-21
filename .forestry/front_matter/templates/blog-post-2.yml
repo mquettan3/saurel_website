@@ -35,11 +35,11 @@ fields:
   default: now
 - name: post_type
   type: select
-  default: event
+  default: blog
   config:
     required: true
     options:
-    - event
+    - blog
     source:
       type: simple
       section: 
