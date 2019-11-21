@@ -11,4 +11,4 @@ post_type: ''
 ---
 ### This is a blog post!
 
-Hopefully you've learned something by the time you've finished reading this post!!
+Hopefully you've learned something by the time you've finished reading this post!
