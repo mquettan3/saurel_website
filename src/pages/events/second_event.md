@@ -1,9 +1,8 @@
 ---
-tags:
-- asdf
+tags: []
 post_type: event
-event_title: temp
-event_date: 12/26/2019 1:00 PM
+event_title: My first event!
+event_date: 12/25/2019 8:00 PM
 eventbrite_link: https://marcusquettan.com/
 
 ---
