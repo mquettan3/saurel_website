@@ -49,5 +49,5 @@ fields:
   description: Used to differentiate blog posts from other markdown files.
   hidden: false
 pages:
-- src/pages/blogposts/post-one.md
 - src/pages/blogposts/my-first-blog-post.md
+- src/pages/blogposts/post-one.md

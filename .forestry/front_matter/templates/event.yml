@@ -46,3 +46,5 @@ fields:
       path: 
   label: Post Type
   description: Used to differentiate events from other markdown files.
+pages:
+- src/pages/blogposts/first_event.md
