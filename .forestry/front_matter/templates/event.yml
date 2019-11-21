@@ -32,3 +32,17 @@ fields:
       format: markdown
   label: Eventbrite Link
   description: Must be an HTTP Link to the Eventbrite Event
+- name: post_type
+  type: select
+  default: event
+  config:
+    required: true
+    options:
+    - event
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Post Type
+  description: Used to differentiate events from other markdown files.
