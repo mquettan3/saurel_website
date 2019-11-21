@@ -47,4 +47,4 @@ fields:
   label: Post Type
   description: Used to differentiate events from other markdown files.
 pages:
-- src/pages/events/second_event.md
+- src/pages/events/first_event.md
