@@ -48,4 +48,3 @@ fields:
   description: Used to differentiate events from other markdown files.
 pages:
 - src/pages/events/second_event.md
-- src/pages/blogposts/first_event.md
