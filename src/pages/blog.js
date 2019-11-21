@@ -33,20 +33,21 @@ export default function BlogPage( { data } ) {
 
 export const pageQuery = graphql`
 query BlogIndexQuery {
-    allMarkdownRemark(sort: {fields: frontmatter___creation_date, order: DESC}) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            title
-            author
-            creation_date
-            blog_image
-            tags
-          }
+  allMarkdownRemark(sort: {fields: frontmatter___creation_date, order: DESC}, filter: {frontmatter: {post_type: {eq: "blog"}}}) {
+    edges {
+      node {
+        id
+        html
+        frontmatter {
+          title
+          author
+          creation_date
+          blog_image
+          tags
+          post_type
         }
       }
     }
-  }  
+  }
+}
 `
