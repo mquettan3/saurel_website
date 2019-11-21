@@ -34,13 +34,20 @@ fields:
     export_format: MM/DD/YYYY h:mm
   default: now
 - name: post_type
-  type: text
+  type: select
+  default: event
   config:
     required: true
+    options:
+    - event
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Post Type
-  description: Forced field to sort blog posts from other markdown files
+  description: Used to differentiate blog posts from other markdown files.
   hidden: true
-  default: blog_post
 pages:
 - src/pages/blogposts/my-first-blog-post.md
 - src/pages/blogposts/post-one.md
