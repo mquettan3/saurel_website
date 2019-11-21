@@ -6,7 +6,7 @@ creation_date: 11/06/2019 12:23
 title: My first blog post!
 author: Marcus Quettan
 blog_image: "/uploads/Atlanta_Cityscape.jpg"
-post_type: event
+post_type: blog
 
 ---
 ### This is a blog post!
