@@ -13,13 +13,11 @@ export default function AboutPage( { data } ) {
                     
                     return (
                         <div key={post.node.id}>
-                            <h1>{post.node.frontmatter.title}</h1>
+                            <h1>{post.node.frontmatter.event_title}</h1>
                             <small>Event Date: {eventDate.toLocaleString("en-US")}</small>
-                            <p>Location: {post.node.frontmatter.location}</p>
                             <p>Description: {post.node.frontmatter.description}</p>
-                            <br />
-                            <br />
-                            <div dangerouslySetInnerHTML={{ __html: post.node.html }}></div> 
+                            <p>Location: {post.node.frontmatter.location}</p>
+                            <a href={post.node.frontmatter.eventbrite_link}>Register for this Event</a>
                             <br />
                             <p>___________________</p>
                             <br />
@@ -40,7 +38,7 @@ query EventsIndexQuery {
         id
         html
         frontmatter {
-          title
+          event_title
           event_date
           eventbrite_link
           description
