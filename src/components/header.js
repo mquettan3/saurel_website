@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import "../styles/main.scss"
+import SideNav from "./side_nav"
 
 export default function Header( {siteTitle} ) {
   const [menuIconClicked, setMenuIconClicked] = useState(false);
@@ -25,6 +26,10 @@ export default function Header( {siteTitle} ) {
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
+          <SideNav 
+            isShown={menuIconClicked}
+            setMenuIconClicked={setMenuIconClicked}
+          />
         </div>
       </div>
     </header>

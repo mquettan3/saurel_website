@@ -1,0 +1,75 @@
+.side-nav {
+    position: fixed;
+    right: -500px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    transition: right 0.4s ease-in-out;
+    width: 500px;
+    top: 0px;
+    padding: 30px 40px;
+
+    .top {
+        text-align: right;
+        padding-bottom: 20px;
+        border-bottom: 1px solid orange;
+
+        .close-button {
+            cursor: pointer;
+            padding-right: 30px;
+            margin-top: 20px;
+
+            div {
+                text-align: center;
+                display: inline-block;
+                color: white;
+                border: 1px solid;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                border-color: orange;
+                color: orange;
+                line-height: 19.44px;
+            }
+
+            div:hover {
+                background-color: orange;
+                color: white;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 30px;
+
+        li {
+            border-bottom: 1px solid orange;
+        }
+    }
+
+    .social-media-links {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+         a {
+            cursor: pointer;
+            color: white;
+            margin-right: 10px;
+            background-color: orange;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 29px;
+            svg {
+                font-size: 18px;
+            }
+         }
+    }
+}
+
+.side-nav.show {
+    transition: right 0.4s ease-in-out;
+    right: 0px;
+}
