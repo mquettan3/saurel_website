@@ -18,10 +18,6 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY h:mm A
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
 - name: eventbrite_link
   type: textarea
   default: ''
@@ -32,6 +28,26 @@ fields:
       format: markdown
   label: Eventbrite Link
   description: Must be an HTTP Link to the Eventbrite Event
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description of the event being held.
+- name: location
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Location
+  description: Address/Location of the event being held.
 - name: post_type
   type: select
   default: event
@@ -46,5 +62,9 @@ fields:
       path: 
   label: Post Type
   description: Used to differentiate events from other markdown files.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 pages:
 - src/pages/events/first_event.md
