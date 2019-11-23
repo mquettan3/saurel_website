@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 export default function BlogPage( { data } ) {
     return (
@@ -12,11 +12,13 @@ export default function BlogPage( { data } ) {
                 <p>___________________</p>
                 {data.allMarkdownRemark.edges.map(post => {
                     const localDate = new Date(post.node.frontmatter.creation_date);
+                    const path = (post.node.fileAbsolutePath.split('\\').pop().split('/').pop().split('.'))[0];
                     
                     return (
                         <div key={post.node.id}>
                             <h1>{post.node.frontmatter.title}</h1>
                             <small>Posted by: {post.node.frontmatter.author} on {localDate.toLocaleString("en-US")}</small>
+                            <Link to={path}>Read More</Link>
                             <br />
                             <br />
                             <div dangerouslySetInnerHTML={{ __html: post.node.html }}></div> 
@@ -38,6 +40,7 @@ query BlogIndexQuery {
       node {
         id
         html
+        fileAbsolutePath
         frontmatter {
           title
           author
