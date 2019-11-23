@@ -31,7 +31,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         } else {
             res.data.allMarkdownRemark.edges.forEach(({node}) => {
                 createPage({
-                    path: (node.fileAbsolutePath.split('\\').pop().split('/').pop().split('.'))[0],
+                    path: "/" + (node.fileAbsolutePath.split('\\').pop().split('/').pop().split('.'))[0] + "/",
                     component: postTemplate
                 })
             })
