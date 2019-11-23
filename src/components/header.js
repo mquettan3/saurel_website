@@ -21,7 +21,7 @@ export default function Header( {siteTitle} ) {
             <li><Link to="/events">Events</Link></li>
           </ul>
         
-          <div className={"hamburger-icon " + (menuIconClicked ? "change" : "")} onClick={() => setMenuIconClicked(!menuIconClicked)}>
+          <div className="hamburger-icon" onClick={() => setMenuIconClicked(!menuIconClicked)}>
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>

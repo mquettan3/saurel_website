@@ -20,11 +20,6 @@ export default function side_nav(props) {
                 <li>Podcast</li>
             </ul>
 
-            
-            <div className="top">
-
-            </div>
-
             <div className="social-media-links">
                 <a href="https://www.linkedin.com">
                     <FontAwesomeIcon icon={faLinkedin} />
