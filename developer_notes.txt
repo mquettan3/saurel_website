@@ -1,0 +1,9 @@
+I'm not sure that I like the whole "Layout" class.  Feels really restricting.  I'd rather have pages and each page be their own top level then import each component.  The problem with layout is that I don't want every page to have the same layout (Specifically not sure where I want to put the container.)
+
+layout.css needs to be deleted - Anything that's needed in there should be in main.scss or a new sass file.  Maybe I should just include a normalize.css?
+
+Keep seo.js - should put it on every page?
+
+Create an image.js for the website banner - all the important images.
+
+
