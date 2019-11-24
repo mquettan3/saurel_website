@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
+import Header from "../components/header"
 import { graphql, Link } from 'gatsby'
 
 export default function BlogPostTemplate( {data} ) {
@@ -10,21 +11,19 @@ export default function BlogPostTemplate( {data} ) {
     console.log(path);
 
     return (
-        <Layout>
-            <div>
-                <p>___________________</p>
-                <div key={post.id}>
+        <div>
+            <div className="blog-post">
+                <Header siteTitle="Saurel Quettan Enterprises" />
+                <img className="post-image" src={post.frontmatter.blog_image}></img>
+                <div className="container">
                     <h1>{post.frontmatter.title}</h1>
-                    <small>Posted by: {post.frontmatter.author} on {localDate.toLocaleString("en-US")}</small>
+                    <small>{localDate.toLocaleString("en-US")} | Author: {post.frontmatter.author}</small>
                     <br />
                     <br />
                     <div dangerouslySetInnerHTML={{ __html: post.html }}></div> 
-                    <br />
-                    <p>___________________</p>
-                    <br />
                 </div>
             </div>
-        </Layout>
+        </div>
     )
 }
 

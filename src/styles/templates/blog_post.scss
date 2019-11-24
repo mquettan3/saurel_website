@@ -1,0 +1,21 @@
+
+.blog-post {
+    .header {
+        margin-bottom: 0px;
+    }
+
+    .post-image {
+        width: 100vw;
+        max-height: 800px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    .container {
+        width: 60%;
+    }
+}

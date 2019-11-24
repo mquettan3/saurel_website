@@ -5,29 +5,29 @@ import { graphql, Link } from 'gatsby'
 export default function BlogPage( { data } ) {
     return (
         <Layout>
-            <div>
+            <div className="blog">
                 <h1>Blog</h1>
                 <p>Dolor elit deserunt laborum nulla. Consectetur culpa irure occaecat consequat ea culpa eiusmod ipsum ipsum. Sint et laboris do nisi elit tempor cillum nulla nostrud nostrud adipisicing irure ullamco.</p>
                 
                 <p>___________________</p>
-                {data.allMarkdownRemark.edges.map(post => {
-                    const localDate = new Date(post.node.frontmatter.creation_date);
-                    const path = (post.node.fileAbsolutePath.split('\\').pop().split('/').pop().split('.'))[0];
-                    
-                    return (
-                        <div key={post.node.id}>
+                <div className="posts-container">
+                  {data.allMarkdownRemark.edges.map(post => {
+                      const localDate = new Date(post.node.frontmatter.creation_date);
+                      const path = (post.node.fileAbsolutePath.split('\\').pop().split('/').pop().split('.'))[0];
+                      
+                      return (
+                          <div key={post.node.id}>
+                            <div className="post-image-container">
+                              {/* <Link to={path}><div className="post-image" style={{backgroundImage: "url(" + post.node.frontmatter.blog_image + ")"}}></div></Link> */}
+                              <Link to={path}><div className="post-image" style={{backgroundImage: "url(" + "https://via.placeholder.com/500x250" + ")"}}></div></Link>
+                            </div>
                             <h1>{post.node.frontmatter.title}</h1>
-                            <small>Posted by: {post.node.frontmatter.author} on {localDate.toLocaleString("en-US")}</small>
+                            <small>{localDate.toLocaleString("en-US")} | By: {post.node.frontmatter.author}</small>
                             <Link to={path}>Read More</Link>
-                            <br />
-                            <br />
-                            <div dangerouslySetInnerHTML={{ __html: post.node.html }}></div> 
-                            <br />
-                            <p>___________________</p>
-                            <br />
-                        </div>
-                    )
-                })}
+                          </div>
+                      )
+                  })}
+                </div>
             </div>
         </Layout>
     )
@@ -35,7 +35,7 @@ export default function BlogPage( { data } ) {
 
 export const pageQuery = graphql`
 query BlogIndexQuery {
-  allMarkdownRemark(sort: {fields: frontmatter___creation_date, order: DESC}, filter: {frontmatter: {post_type: {eq: "blog"}}}) {
+  allMarkdownRemark(sort: {fields: frontmatter___creation_date, order: DESC}, filter: {frontmatter: {post_type: {eq: "blog"}}}, limit: 9) {
     edges {
       node {
         id
