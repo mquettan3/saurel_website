@@ -28,12 +28,13 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container">
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Website Coutesy of 
-          {` `}
-          <a href="https://www.marcusquettan.com">Marcus Quettan</a>
-        </footer>
       </div>
+      <footer>
+        <div className="footer-container container">
+          <div>© {new Date().getFullYear()} Saurel Quettan</div>
+          <div>Website created by <a href="https://www.marcusquettan.com">Marcus Quettan</a></div>
+        </div>
+      </footer>
     </>
   )
 }

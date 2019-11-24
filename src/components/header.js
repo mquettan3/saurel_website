@@ -13,6 +13,7 @@ export default function Header( {siteTitle} ) {
         <h1 className="title">
           <Link to="/">{siteTitle}</Link>
         </h1>
+        
         <div className="navigation-row">
           <ul className="navigation-list">
             <li><Link to="/">Home</Link></li>
