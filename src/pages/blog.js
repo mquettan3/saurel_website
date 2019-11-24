@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby'
 export default function BlogPage( { data } ) {
     return (
         <Layout>
-            <div className="blog">
+            <div className="blog container">
                 <h1>Blog</h1>
                 <p>Dolor elit deserunt laborum nulla. Consectetur culpa irure occaecat consequat ea culpa eiusmod ipsum ipsum. Sint et laboris do nisi elit tempor cillum nulla nostrud nostrud adipisicing irure ullamco.</p>
                 

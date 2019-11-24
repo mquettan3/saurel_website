@@ -1,23 +1,26 @@
 // Global Variable Definitions
 @import "variables";
 
+// Overall layout styles - Noramlizes CSS? - Created by Gatsby
+@import "./layout";
+
 // Header Styles
 @import "components/header";
+
+// Pop-out side nav
 @import "components/side_nav";
+
+// Blog page styles
 @import "components/blog";
+
+// Individual blog post styles
 @import "templates/blog_post";
+
+// Footer styles
+@import "components/footer";
 
 .container {
     margin: 0 auto;
     max-width: 1920px;
     width: 90%;
-}
-
-footer {
-    background-color: black;
-    color: white;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
 }
